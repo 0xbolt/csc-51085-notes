@@ -1,0 +1,150 @@
+%%%% Kinematic Animation %%%%
+
+@article{fabrik,
+  title   = {FABRIK: A fast, iterative solver for the Inverse Kinematics problem},
+  author  = {Andreas Aristidou and Joan Lasenby},
+  journal = {Graphical Models},
+  volume  = {73},
+  pages   = {243--260},
+  year    = {2011},
+  publisher = {Elsevier},
+  url = {http://www.andreasaristidou.com/publications/papers/FABRIK.pdf},
+  abstract = {Inverse Kinematics is defined as the problem of determining a set of appropriate joint configurations for which the end effectors move to desired positions as smoothly, rapidly, and as accurately as possible. However, many of the currently available methods suffer from high computational cost and production of unrealistic poses. In this paper, a novel heuristic method, called Forward And Backward Reaching Inverse Kinematics (FABRIK), is described and compared with some of the most popular existing methods regarding reliability, computational cost and conversion criteria. FABRIK avoids the use of rotational angles or matrices, and instead finds each joint position via locating a point on a line. Thus, it converges in few iterations, has low computational cost and produces visually realistic poses. Constraints can easily be incorporated within FABRIK and multiple chains with multiple end effectors are also supported.}
+}
+
+@article{baerlocher2003,
+  author   = {Baerlocher, Paolo and Boulic, Ronan},
+  title    = {An Inverse Kinematic Architecture Enforcing an Arbitrary Number of Strict Priority Levels},
+  year     = {2003},
+  abstract = {An efficient Inverse Kinematics solver is a key element in applications targeting the on-line or off-line postural control of complex articulated figures. In the present paper we progressively describe the strategic components of a very general and robust IK architecture. We then present an efficient recursive algorithm enforcing an arbitrary number of strict priorities to arbitrate the fulfillment of conflicting constraints. Due to its local nature, the moderate cost of the solution allows this architecture to run within an interactive environment. The algorithm is illustrated on the postural control of complex articulated figures.},
+  keywords = {inverse kinematics, strict priority levels, articulated figures, postural control},
+  url = {https://www.cimat.mx/~cesteves/cursos/animation/pdf/BaerlocherBoulic.pdf}
+}
+
+@inproceedings{gleicher1998,
+  author    = {Michael Gleicher},
+  title     = {Retargetting Motion to New Characters},
+  booktitle = {Proceedings of the 25th Annual Conference on Computer Graphics and Interactive Techniques (SIGGRAPH '98)},
+  year      = {1998},
+  pages     = {33--42},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/280814.280820},
+  url       = {https://dl.acm.org/doi/pdf/10.1145/280814.280820},
+  abstract  = {In this paper, we present a technique for motion: the problem of adapting an animated motion from one character to another. Our focus is on adapting the motion of one articulated figure to another figure with identical structure but different segment lengths, although we use this as a step when considering less similar characters. Our method creates adaptations that preserve desirable qualities of the original motion. We identify specific features of the motion as constraints that must be maintained. A spacetime constraints solver computes an adapted motion that re-establishes these constraints while preserving the frequency characteristics of the original signal. We demonstrate our approach on motion capture data.}
+}
+
+@inproceedings{kovar2002,
+  author    = {Lucas Kovar and Michael Gleicher and Fr{\'e}d{\'e}ric Pighin},
+  title     = {Motion Graphs},
+  booktitle = {Proceedings of ACM SIGGRAPH 2002},
+  year      = {2002},
+  pages     = {473--482},
+  publisher = {ACM},
+  doi       = {10.1145/566570.566605},
+  url       = {https://research.cs.wisc.edu/graphics/Papers/Gleicher/Mocap/mograph.pdf},
+  abstract  = {In this paper we present a novel method for creating realistic, controllable motion. Given a corpus of motion capture data, we automatically construct a directed graph called a motion graph that encapsulates connections among the database. The motion graph consists both of pieces of original motion and automatically generated transitions. Motion can be generated simply by building walks on the graph. We present a general framework for extracting particular graph walks that meet a user’s specifications. We then show how this framework can be applied to the specific problem of generating different styles of locomotion along arbitrary paths.}
+}
+
+@inproceedings{witkin1995,
+  author       = {Andrew Witkin and Zoran Popovi\'{c}},
+  title        = {Motion Warping},
+  booktitle    = {SIGGRAPH '95: Proceedings of the 22nd Annual Conference on Computer Graphics and Interactive Techniques},
+  year         = {1995},
+  pages        = {105--108},
+  publisher    = {ACM},
+  address      = {Los Angeles, CA},
+  abstract     = {We describe a simple technique for editing captured or keyframed animation based on warping of the motion parameter curves. The animator interactively defines a set of keyframe-like constraints which are used to derive a smooth deformation that preserves the fine structure of the original motion. Motion clips are combined by overlapping and blending of the parameter curves. We show that whole families of realistic motions can be derived from a single captured motion sequence using only a few keyframes to specify the motion warp. Our technique makes it feasible to create libraries of reusable clip motion.},
+  url          = {https://homes.cs.washington.edu/~zoran/warpage/warpage.pdf}
+}
+
+@article{holden2017,
+  title        = {Phase-Functioned Neural Networks for Character Control},
+  author       = {Holden, Daniel and Komura, Taku and Saito, Jun},
+  journal      = {ACM Transactions on Graphics},
+  volume       = {36},
+  number       = {4},
+  pages        = {42:1--42:13},
+  year         = {2017},
+  doi          = {10.1145/3072959.3073663},
+  url          = {https://theorangeduck.com/media/uploads/other_stuff/phasefunction.pdf},
+  abstract     = {We present a real-time character control mechanism using a novel neural network architecture called a Phase-Functioned Neural Network. In this network structure, the weights are computed via a cyclic function which uses the phase as an input. Along with the phase, our system takes as input user controls, the previous state of the character, the geometry of the scene, and automatically produces high quality motions that achieve the desired user control. The entire network is trained in an end-to-end fashion on a large dataset composed of locomotion such as walking, running, jumping, and climbing movements fitted into virtual environments. Our network architecture produces higher quality motion than autoregressive time-series models such as LSTMs, remains extremely fast and compact, and enables expressive, adaptive locomotion in real time across complex terrain.}
+}
+
+@inproceedings{witkin1988,
+  author = {Witkin, Andrew and Kass, Michael},
+  title = {Spacetime Constraints},
+  booktitle = {ACM SIGGRAPH Computer Graphics, Volume 22, Issue 4},
+  year = {1988},
+  pages = {159--168},
+  doi = {10.1145/378456.378507},
+  url = {https://dl.acm.org/doi/10.1145/378456.378507},
+  abstract = {Spacetime constraints are a method for generating physically valid character animation by framing motion generation as a constrained optimization problem that integrates task-level constraints, stylistic criteria, and Newtonian mechanics; the resulting motions naturally reproduce traditional animation principles such as anticipation, squash-and-stretch, and follow-through.}
+}
+
+@techreport{buss2009,
+  title = {Introduction to Inverse Kinematics with Jacobian Transpose, Pseudoinverse and Damped Least Squares Methods},
+  author = {Buss, Samuel R.},
+  institution = {University of California, San Diego},
+  year = {2009},
+  address = {La Jolla, CA},
+  url = {https://www.cs.cmu.edu/~15464-s13/lectures/lecture6/iksurvey.pdf},
+  abstract = {This introduction presents the Jacobian transpose method, the pseudoinverse method, and the damped least squares (DLS) methods for inverse kinematics, emphasizing mathematical foundations including SVD-based analysis, robustness near singularities, unreachable targets, and iterative tracking of end-effector positions in rigid multibody systems.},
+}
+
+@article{aristidou2016,
+  title = {Extending FABRIK with Model Constraints},
+  author = {Aristidou, Andreas and Chrysanthou, Yiorgos and Lasenby, Joan},
+  journal = {Computer Animation and Virtual Worlds},
+  volume = {27},
+  number = {1},
+  pages = {35--57},
+  year = {2016},
+  publisher = {Wiley},
+  doi = {10.1002/cav.1630},
+  url = {http://www.andreasaristidou.com/publications/papers/Extending_FABRIK_with_Model_Cοnstraints.pdf},
+  abstract = {Forward and Backward Reaching Inverse Kinematics (FABRIK) is a recent iterative inverse kinematics solver that became very popular because of its simplicity, convergence speed and control performance, especially in models with multiple end effectors. In this paper, we extend and/or adjust FABRIK to be used in problems with leaf joints and closed-loop chains and to control a fixed inter-joint distance in a kinetic chain with unsteady data. In addition, we provide optimisation solutions when the target is unreachable and a proof of convergence when a solution is available. We also present various techniques for constraining anthropometric and robotic joint models using FABRIK and provide clarifications and solutions to many questions raised since the first publication of FABRIK. Finally, a human-like model that has been structured hierarchically and sequentially using FABRIK is presented, utilising most of the suggested joint models; it can efficiently trace targets in real time, without oscillations or discontinuities, verifying the effectiveness of FABRIK.}
+}
+
+@inproceedings{shoemake1985,
+  author    = {Shoemake, Ken},
+  title     = {Animating Rotation with Quaternions},
+  booktitle = {Proceedings of the 12th Annual Conference on Computer Graphics and Interactive Techniques (SIGGRAPH 1985)},
+  year      = {1985},
+  volume    = {19},
+  number    = {3},
+  pages     = {245--254},
+  address   = {San Francisco, USA},
+  publisher = {ACM},
+  doi       = {10.1145/325165.325242},
+  url       = {https://www.cs.cmu.edu/~kiranb/animation/p245-shoemake.pdf},
+  abstract  = {Solid bodies roll and tumble through space. In computer animation, so do cameras. The rotations of these objects are best described using a four coordinate system, quaternions, as is shown in this paper. Of all quaternions, those on the unit sphere are most suitable for animation, but the question of how to construct curves on spheres has not been much explored. This paper gives one answer by presenting a new kind of spline curve, created on a sphere, suitable for smoothly in-betweening sequences of arbitrary rotations. Both theory and experiment show that the resulting motion is smooth and natural, without the quirks found in earlier methods.}
+}
+
+%%%% Character Rigging
+
+@article{lasseter1987,
+  author       = {John Lasseter},
+  title        = {Principles of Traditional Animation Applied to 3D Computer Animation},
+  journal      = {ACM SIGGRAPH Computer Graphics},
+  volume       = {21},
+  number       = {4},
+  pages        = {35--44},
+  year         = {1987},
+  doi          = {10.1145/37402.37407},
+  url          = {https://dl.acm.org/doi/10.1145/37402.37407},
+  abstract     = {This paper describes the basic principles of traditional 2D hand drawn animation and their application to 3D computer animation, detailing how these principles evolved and how they map to 3D, demonstrating their importance for high-quality computer animation.}
+}
+
+@article{kavan2008,
+  author    = {Ladislav Kavan and Steven Collins and Ji{\v{r}}{\'\i} {\v{Z}}{\'a}ra and Carol O'Sullivan},
+  title     = {Geometric Skinning with Approximate Dual Quaternion Blending},
+  journal   = {ACM Transactions on Graphics},
+  volume    = {27},
+  number    = {4},
+  pages     = {1--23},
+  year      = {2008},
+  doi       = {10.1145/1409625.1409627},
+  url       = {https://dl.acm.org/doi/10.1145/1409625.1409627},
+  abstract  = {Skinning of skeletally deformable models is extensively used for real-time animation of characters and similar objects. Linear blend skinning suffers from well-known artifacts. This paper introduces an approximate dual quaternion blending method that avoids these artifacts while remaining efficient and easy to integrate into existing GPU-based animation systems.}
+}
