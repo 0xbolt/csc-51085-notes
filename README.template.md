@@ -1,6 +1,21 @@
 # csc-51085-refs
 
 ## Schedule
+### 1. Introduction & Mathematical Foundations
+- Scope of computer animation vs. VFX
+- Focus on motion & deformation, not rendering
+- Overview of animation pipeline
+- Review of core math tools:
+    - Linear algebra
+    - Rotations (matrices, Euler angles, quaternions)
+    - Barycentric coordinates
+    - SVD
+    - Homogeneous coordinates
+- Curve modeling:
+    - Cardinal splines
+    - Catmull–Rom splines
+    - Frenet frames
+
 ### 2. Kinematic Animation: Rigid & Articulated Bodies
 - Key-framing rigid bodies: position + orientation
 - Interpolating orientations:
@@ -92,7 +107,16 @@
 - Lattice Boltzmann Method (LBM)
 - Multiphase fluids
 
-
+### 9. Physically Based Character Animation
+- Layered character model
+- Passive vs active physics
+- Hair dynamics
+- Cloth dynamics
+- Skin simulation
+- Articulated rigid body dynamics
+- Muscle-like actuation
+- Motion control strategies
+- Deep Reinforcement Learning for motion
 
 ## Books
 ## Libraries
