@@ -18,12 +18,10 @@
   - Frenet frames
 
 #### References
-- Ken Shoemake, *Animating Rotation with Quaternions*, SIGGRAPH 1985
+- [Animating rotation with quaternion curves (Shoemake 1985)](https://dl.acm.org/doi/10.1145/325165.325242)
   https://www.cs.cmu.edu/~kiranb/animation/p245-shoemake.pdf
-- John Lasseter, *Principles of Traditional Animation Applied to 3D Computer Animation*, SIGGRAPH 1987
-  https://dl.acm.org/doi/10.1145/37402.37407
-- Andrew Witkin, Michael Kass, *Spacetime Constraints*, SIGGRAPH 1988
-  https://dl.acm.org/doi/10.1145/378456.378507
+- [Principles of traditional animation applied to 3D computer animation (Lasseter 1987)](https://dl.acm.org/doi/10.1145/37402.37407)
+- [Spacetime Constraints (Witkin et al. 1998)](https://dl.acm.org/doi/10.1145/378456.378507)
 
 ### 2. Kinematic Animation: Rigid & Articulated Bodies
 - Key-framing rigid bodies (position + orientation)
@@ -154,6 +152,7 @@
 - Jos Stam, *Stable Fluids*, SIGGRAPH 1999
 - Fedkiw, Stam, Jensen, *Visual Simulation of Smoke*, SIGGRAPH 2001
 - Zhu, Bridson, *Animating Sand as a Fluid*, SIGGRAPH 2005
+- [Flow Simulation with Complex Boundaries (GPU Gems 2)](https://developer.nvidia.com/gpugems/gpugems2/part-vi-simulation-and-numerical-algorithms/chapter-47-flow-simulation-complex)
 
 ### 9. Physically Based Character Animation
 - Layered character models
@@ -168,11 +167,15 @@
 #### References
 - Bertails et al., *Super-Helices for Predictable Hair Simulation*, SIGGRAPH 2006
 - Bergou et al., *Discrete Elastic Rods*, SIGGRAPH 2008
-- Kaufman et al., https://dl.acm.org/doi/10.1145/2601097.2601100
+- [Adaptive nonlinearity for collisions in complex rod assemblies (Kaufman et al. 2014)](https://dl.acm.org/doi/10.1145/2601097.2601100)
 
 ## Books
 - Rick Parent, *Computer Animation: Algorithms and Techniques*
 - Witkin & Baraff, *Physically Based Modeling*
+- Real time collision detection
+
+## Other Courses
+- http://graphics.stanford.edu/courses/cs348c/
 
 ## Libraries
 - https://github.com/g-truc/glm
