@@ -153,6 +153,8 @@
 - Fedkiw, Stam, Jensen, *Visual Simulation of Smoke*, SIGGRAPH 2001
 - Zhu, Bridson, *Animating Sand as a Fluid*, SIGGRAPH 2005
 - [Flow Simulation with Complex Boundaries (GPU Gems 2)](https://developer.nvidia.com/gpugems/gpugems2/part-vi-simulation-and-numerical-algorithms/chapter-47-flow-simulation-complex)
+- [Fast Fluid Dynamics Simulation on the GPU (GPU Gems)](https://developer.nvidia.com/gpugems/gpugems/part-vi-beyond-triangles/chapter-38-fast-fluid-dynamics-simulation-gpu)
+- [Real-Time Simulation and Rendering of 3D Fluids](https://developer.nvidia.com/gpugems/gpugems3/part-v-physics-simulation/chapter-30-real-time-simulation-and-rendering-3d-fluids)
 
 ### 9. Physically Based Character Animation
 - Layered character models
